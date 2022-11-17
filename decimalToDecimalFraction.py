@@ -1,4 +1,4 @@
-def DecimalToBinary(n, digit):
+def decimalToDecimalFraction(n, digit):
     n_temp = n
     result = 0
     for i in range(0, digit):     
@@ -28,7 +28,7 @@ while True:
 num_arr = list(map(int, arr[0:len(arr)-1]))
 
 for j in range(0, len(num_arr)):
-    num_arr[j] = DecimalToBinary(num_arr[j], 12)
+    num_arr[j] = decimalToDecimalFraction(num_arr[j], 12)
 
 for i in range(0, len(num_arr)):    
     f_2.write(str(num_arr[i]))
